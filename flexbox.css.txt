@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: Red;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 500px;
+  margin: 5px;
+  line-height: 100px;
+  font-size: 50px;
+}
+</style>
+</head>
+<body>
+<h1><c>Sign up</c></h1>
+
+<div class="flex-container">
+  <div>Name: </div>
+  <div>Email:</div>
+
+</div>
+
+</body>
+</html>
