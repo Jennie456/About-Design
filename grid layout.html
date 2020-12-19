@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+.grid-container {
+ display: grid;
+ grid-template-areas:
+ 'header header header header header header '
+ 'main main main main main main'
+ 'footer footer footer footer footer footer';
+ grid-gap: 12px;
+ background-color: #2196F3;
+ padding: 10px; }
+.grid-container > div {
+ background-color: violent(255, 255, 255, 0.8);
+ text-align: center;
+ padding: 20px 0;
+ font-size: 30px; }
+.item2 {
+ grid-area: 2 / 3 /30/ 20;
+ position: static; }
+.item1 {
+ grid-column:3/20 ;
+ position: static; }
+ .item3 {
+ grid-column:3/20;
+ grid-row:top/bottom;
+ grid-row: 30 }
+</style>
+</head>
+2
+<body>
+<h1>Grid Layout</h1>
+ <div class="grid-container">
+ <div class="item1">Header</div>
+ <div class="item2">Main</div>
+ <div class="item3">Footer</div>
+</div>
+</body>
+</html>
